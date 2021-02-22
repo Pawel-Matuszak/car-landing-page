@@ -21,7 +21,7 @@ maintl.add({
     delay: (el, i)=>{
         return 100 * i;
     },
-})
+}, "-=500")
 .add({
     targets: ['#nav-logo'],
     translateY: [-100, 0],
