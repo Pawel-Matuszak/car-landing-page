@@ -40,6 +40,7 @@ nav{
 
 #nav-logo{
     z-index: 99;
+    transform: translateY(-100px);
 }
 
 .nav-options{
@@ -52,6 +53,7 @@ nav{
 .nav-item{
     margin: 0 2rem;
     padding: .5rem 1rem;
+    transform: translateY(-100px);
 }
 
 .nav-item:hover, .nav-item-mobile:hover{
@@ -71,6 +73,10 @@ nav{
     font-weight: 400;
 }
 
+.big-text span{
+    transform: translateY(80px);
+}
+
 .hide-title{
     overflow: hidden;
 }
@@ -84,6 +90,10 @@ nav{
     font-weight: 400;
 }
 
+.small-text span{
+    transform: translateY(80px);
+}
+
 .table-container{
     height: 80vh;
     position: relative;
@@ -95,7 +105,6 @@ nav{
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
@@ -114,10 +123,12 @@ nav{
 .stat{
     font-size: 2rem;
     font-weight: 500;
+    transform: translateY(100px);
 }
 
 .stat-desc{
     font-size: 1.3rem;
+    transform: translateY(100px);
 }
 
 .section-container{

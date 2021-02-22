@@ -12,11 +12,8 @@ maintl.add({
     targets: ['.big-text span', '.small-text span'],
     translateY: [80, 0],
     delay: 100,
-}).add({
-    targets: ['.stat', '.stat-desc'],
-    translateY: [100, 0],
-    duration: 500,
-}, "-=500").add({
+})
+.add({
     targets: ['.nav-item'],
     translateY: [-100, 0],
     opacity: [0,1],
@@ -24,16 +21,25 @@ maintl.add({
     delay: (el, i)=>{
         return 100 * i;
     },
-}).add({
+})
+.add({
     targets: ['#nav-logo'],
     translateY: [-100, 0],
     opacity: [0,1],
     duration: 500,
 }, "-=500")
+.add({
+    targets: ['.stat', '.stat-desc', '.stats-table'],
+    translateY: [100, 0],
+    duration: 500,
+    opacity: [0,1]
+})
+
 
 anime({
-    targets: "main",
-    duration: 5000,
+    targets: "body",
+    delay: 200,
+    duration: 3000,
     opacity: [0,1]
 })
 
